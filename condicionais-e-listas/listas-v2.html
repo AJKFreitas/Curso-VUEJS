@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<title>Vue JS - Listas</title>
+<style>
+    ul {
+        list-style: none;
+    }
+</style>
+
+<div id="app">
+    <ul>
+        <li v-for="(cor, i) in cores" :teste='cor'>
+                {{ i  + 1}})  {{ cor }} 
+
+
+        </li>
+    </ul>
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            cores: ['vermelho', 'Amarelo', 'Verde', 'Azul', 'Laranja', 'Preto', 'Branco'],
+            pessoas: [
+                { nome: 'Angelo', idade: 31, peso: '90kg' },
+                { nome: 'Ana', idade: 21, peso: '60kg' },
+                { nome: 'Naiara', idade: 26, peso: '68kg' }
+            ]
+        }
+    })
+</script>

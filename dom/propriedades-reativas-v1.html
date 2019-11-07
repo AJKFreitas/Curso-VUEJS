@@ -1,0 +1,24 @@
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+   
+        <div id="app">
+            <p>{{ titulo }}</p>
+<hr>
+<input type="text" name="texto" id="texto" v-model="titulo">
+        </div>
+   <script>
+        new Vue({
+            el: '#app',
+            data: {
+                titulo: 'Usando vue js!'
+            },
+            methods: {
+                saudacao() {
+                    return 'Boa Tarde!'
+                }
+            }
+
+        })
+    </script>
